@@ -28,4 +28,8 @@ SELECT c.name
 FROM employees e 
 INNER JOIN companies c
 ON e.Company = c.name AND Role='Graphic Designer';
-
+SELECT name,max(POINTS) from students;
+SELECT AVG(Points) FROM students;
+SELECT COUNT(points) FROM students where points = 500;
+SELECT name  FROM students WHERE NAME LIKE '%s%';
+SELECT *  FROM students order by Points DESC;
